@@ -4,16 +4,21 @@ import main
 
 def test_lambda1():
 
-    strval = 'Python Programming Section 1'
-    ret = main.mystrip(strval)
-    print('Your result :', ret)
+    strval = 'Python Programming'
+    ret = main.getalnum(strval)
+    print('Your result: ', ret)
+    retstr = ''.join(ret)
+    # retstr = list(ret)
+    print('Your result ', retstr)
 
-    assert ret == 'PythonProgrammingSection1'
+    assert retstr == 'PythonProgramming'
 
 
 def test_lambda2():
     strval = 'Python     Programming C++     '
-    ret = main.mystrip(strval)
-    print('Your result :', ret)
+    ret = main.getalnum(strval)
+    # retstr = list(ret)
+    retstr = ''.join(ret)
+    print('Your result :', retstr)
 
-    assert ret == 'PythonProgrammingC++'
+    assert retstr == 'PythonProgrammingC'

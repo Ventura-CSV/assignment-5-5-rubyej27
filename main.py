@@ -1,19 +1,14 @@
-
-
-##################################################
-# Make your lambda "isspace( ) "
-##################################################
-
-
-def mystrip(strval):
+def getalnum(strval):
     ##################################################
     # make your code
     ##################################################
-    # Call lambda funcion here
-    ##################################################
-    return yourvariable
+    # yield statement
 
 
-strval = 'Python Programming Section 1'
-ret = mystrip(strval)
-print(ret)
+strval = 'Python Programming'
+ret = getalnum(strval)
+print(ret)  # print generator information
+retstr = ''.join(ret)
+
+# retstr = list(ret)
+print(retstr)
