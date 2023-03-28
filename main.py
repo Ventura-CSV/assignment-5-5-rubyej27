@@ -5,10 +5,15 @@ def getalnum(strval):
     # yield statement
 
 
-strval = 'Python Programming'
-ret = getalnum(strval)
-print(ret)  # print generator information
-retstr = ''.join(ret)
+def main():
+    strval = 'Python Programming'
+    ret = getalnum(strval)
+    print(ret)  # print generator information
+    retstr = ''.join(ret)
 
-# retstr = list(ret)
-print(retstr)
+    # retstr = list(ret)
+    print(retstr)
+
+
+if __name__ == '__main__':
+    main()
