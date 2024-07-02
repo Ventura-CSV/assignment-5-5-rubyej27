@@ -1,10 +1,7 @@
 def getalnum(strval):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-    # yield statement
+    for v in strval:
+        if v != " ":
+            yield v
 
 
 def main():
